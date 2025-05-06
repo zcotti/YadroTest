@@ -1,13 +1,11 @@
-import {combineReducers } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
-import dataReducer from "./reducers/dataReducer";
+import dataSlice from "./dataSlice";
 
-const rootReducer = combineReducers({
-  dataState: dataReducer,
-});
 
 const store = configureStore({
-  reducer: rootReducer,
+  reducer: {
+    dataState: dataSlice,
+  },
 });
 
 export default store;

@@ -7,7 +7,7 @@ import {
   fetchDataSuccess,
   clearData,
   selectRow,
-} from "./actions/dataTableActions";
+} from "./store/dataSlice";
 
 function App() {
   const dispatch = useDispatch();
