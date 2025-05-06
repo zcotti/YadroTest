@@ -1,0 +1,32 @@
+@use "../../variable.scss" as v;
+
+.bar-chart-container {
+  display: flex;
+
+  gap: 10px;
+
+  padding: 20px;
+
+  align-items: flex-end;
+
+  height: v.$max-height-bar-chart;
+}
+
+.bar-column {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.bar {
+  width: 30px;
+
+  background-color: v.$barChart-color;
+
+  transition: height 0.3s;
+
+  margin-top: auto;
+}

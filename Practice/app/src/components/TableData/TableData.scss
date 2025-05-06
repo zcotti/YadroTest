@@ -1,0 +1,56 @@
+@use "../../variable.scss" as v;
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-family: v.$text-family;
+
+  min-width: 600px;
+
+  table-layout: fixed;
+}
+
+thead {
+  background-color: v.$thead-color;
+  color: v.$text-color;
+}
+
+th {
+  padding: 15px;
+
+  text-align: left;
+
+  font-weight: 600;
+  font-size: v.$text-th-size;
+}
+
+.table-data-row {
+  cursor: pointer;
+}
+
+td {
+  min-width: 60px;
+
+  padding: 12px 15px;
+
+  border-bottom: 1px solid #ecf0f1;
+
+  color: #34495e;
+}
+
+th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 8px 0 0;
+
+  text-align: left;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+

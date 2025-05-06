@@ -1,0 +1,36 @@
+$text-button-size: 16px;
+$text-th-size: 14px;
+
+$max-height-bar-chart: 200px;
+
+$text-family: "Roboto", sans-serif;
+
+$text-color: white;
+
+$barChart-color: #4a90e2;
+$thead-color: #2c3e50;
+
+$color-back-fetchData-button: #357abd;
+$color-back-fetchData-button-hover: #4a90e2;
+
+$color-back-clear-button: #dc3545;
+$color-back-clear-button-hover: #bb2d3b;
+
+$color-back-reset-button: #777e85;
+$color-back-reset-button-hover: #474c50;
+
+@mixin ButtonStyles {
+    padding: 12px 24px;
+
+    border-radius: 8px;
+    border: none;
+  
+    cursor: pointer;
+
+    font-family: $text-family;
+    font-weight: 600;
+
+
+    font-size: $text-button-size;
+    color: white;
+}

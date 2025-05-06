@@ -1,0 +1,30 @@
+@use "../../variable.scss" as v;
+
+
+.button {
+  @include v.ButtonStyles;
+
+  &--primary {
+    background-color: v.$color-back-fetchData-button;
+
+    &:hover {
+      background-color: v.$color-back-fetchData-button-hover;
+    }
+  }
+
+  &--clear {
+    background-color: v.$color-back-clear-button;
+
+    &:hover {
+      background-color: v.$color-back-clear-button-hover;
+    }
+  }
+
+  &--save {
+    background-color: v.$color-back-reset-button;
+
+    &:hover {
+      background-color: v.$color-back-reset-button-hover;
+    }
+  }
+}
